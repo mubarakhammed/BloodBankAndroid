@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/material_blue"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi,welcome kindly login to your account"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"/>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:hintTextAppearance="@color/white"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#ccffffff"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/emailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="#ffffff"
+        android:textColorHint="#ccffffff"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#ffffff"
+        android:layout_marginLeft="20dp"
+        app:hintTextAppearance="@color/white"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:onClick="loginButtonClicked"
+            android:text="Login"
+            android:fontFamily="@font/montserrat_bold"
+            android:background="@drawable/colorvector"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/material_blue" />
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:onClick="registerViewClicked"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="No account? REGISTER"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>

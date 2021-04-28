@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Let's get started"
+        android:textColor="@color/material_blue"
+        android:textSize="25dp"
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/register_illustration"/>
+
+    <Spinner
+        android:id="@+id/spinnerChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/material_blue"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/material_blue"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/emailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="10dp"
+            android:textColor="@color/material_blue"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/material_blue"
+        android:textColorHint="@color/material_blue"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/material_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:textColor="@color/material_blue"
+            android:inputType="textPassword"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/colorvector2"
+        android:onClick="signupButtonClicked"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:text="Signup" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:onClick="loginViewClicked"
+
+        android:text="Already registered? LOGIN."
+        android:textColor="@color/material_blue" />
+
+<!--    <Button-->
+<!--        android:id="@+id/sendemail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:background="@drawable/colorvector2"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:text="Send Email"-->
+<!--        android:onClick="Emailsend"/>-->
+
+</LinearLayout>

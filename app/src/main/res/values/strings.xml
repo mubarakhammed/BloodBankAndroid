@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CpeBloodBank</string>
+    <string name="hello_blooddonor">Hello BloodDonor</string>
+    <array name="userChoice">
+        <item>Blood Donor</item>
+        <item>Hospital</item>
+    </array>
+</resources>
