@@ -128,10 +128,10 @@ public class BloodCampActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Enter Correct Date.", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(!(date.length()==10 && date.charAt(2) == '/' && date.charAt(5)=='/')){
-            Toast.makeText(this, "Enter date format: 01/01/2000", Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        if(!(date.length()==10 && date.charAt(2) == '/' && date.charAt(5)=='/')){
+//            Toast.makeText(this, "Enter date format: 01/01/2000", Toast.LENGTH_SHORT).show();
+//            return;
+//        }
         if(place.isEmpty()){
             Toast.makeText(this, "Please Enter Your place.", Toast.LENGTH_SHORT).show();
             return;

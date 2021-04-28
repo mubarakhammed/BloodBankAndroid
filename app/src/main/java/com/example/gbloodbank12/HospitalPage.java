@@ -28,6 +28,9 @@ public class HospitalPage extends AppCompatActivity {
     public void addBloodRequirement(View view){
         startActivity(new Intent(this,BloodRequirementActivity.class));
     }
+    public void listdonor(View view){
+        startActivity(new Intent(this,ListDonors.class));
+    }
 
     public void signoutButtonClicked(View view){
         FirebaseAuth.getInstance().signOut();

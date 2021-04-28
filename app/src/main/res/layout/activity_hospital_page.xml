@@ -29,7 +29,7 @@
 
    <ImageView
        android:layout_width="match_parent"
-       android:layout_height="300dp"
+       android:layout_height="250dp"
        android:src="@drawable/hospital"/>
 
     <Button
@@ -91,6 +91,19 @@
         android:layout_marginTop="15dp"
         android:onClick="signoutButtonClicked"
         android:background="@drawable/colorvector"/>
+
+            <Button
+                android:id="@+id/find_donors"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="40sp"
+                android:layout_marginLeft="40sp"
+                android:text="Find Donors"
+                android:onClick="listdonor"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:background="@drawable/colorvector2"
+                android:layout_marginBottom="20dp"/>
         </LinearLayout>
     </ScrollView>
 

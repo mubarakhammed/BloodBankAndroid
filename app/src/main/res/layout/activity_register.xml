@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
     <TextView
         android:id="@+id/signupTextView"
@@ -38,7 +46,7 @@
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="20dp"
         app:boxStrokeColor="@color/material_blue"
         android:layout_marginTop="40dp"
@@ -64,7 +72,7 @@
         android:layout_width="match_parent"
         app:boxStrokeColor="@color/material_blue"
         android:textColorHint="@color/material_blue"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/material_blue"
@@ -80,6 +88,55 @@
             android:inputType="textPassword"
             android:textSize="15dp"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/material_blue"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/material_blue"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/UserNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Name "
+            android:textCursorDrawable="@null"
+            android:paddingLeft="10dp"
+            android:textColor="@color/material_blue"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        app:boxStrokeColor="@color/material_blue"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/material_blue"
+        android:layout_marginRight="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/UserAddressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="10dp"
+            android:textColor="@color/material_blue"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
 
@@ -103,7 +160,7 @@
         android:layout_marginTop="30dp"
 android:layout_gravity="center"
         android:fontFamily="@font/montserrat_bold"
-
+android:layout_marginBottom="30dp"
         android:onClick="loginViewClicked"
 
         android:text="Already registered? LOGIN."
@@ -121,5 +178,8 @@ android:layout_gravity="center"
 <!--        android:textColor="#ffffff"-->
 <!--        android:text="Send Email"-->
 <!--        android:onClick="Emailsend"/>-->
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
